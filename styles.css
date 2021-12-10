@@ -1,0 +1,135 @@
+html {
+    background-color: lightgray;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+
+}
+
+h1 {
+    font-size: 60px;
+    margin: 20px;
+    margin-bottom: 50px;
+}
+.rainbow-text {
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+.hero {
+    display: flex;
+    align-self: center;
+    gap: 200px;
+}
+
+.controlPanel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* align-content: center; */
+    text-align: center;
+    gap: 40px;
+
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.colorWheel {
+    border: 0;
+    /* padding: 0; */
+    background-color: lightgray;
+    /* overflow:hidden; */
+    /* border-radius: 50%; */
+    height: 80px;
+    width: 80px;
+    /* margin-bottom: 0px; */
+}
+
+.colorWheel::-webkit-color-swatch {
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+  }
+  
+  /* input[type=color]::-webkit-color-swatch-wrapper {
+      border: none;
+      border-radius: 50%;
+      padding: 0;
+  } */
+
+.colorMode {
+    font-size: larger;
+    background-color: black;
+    /* text-align: center; */
+    color: white;
+    border-radius: 5%;
+    padding: 8px 40px;
+    width: 120px;
+}
+
+.rainbowMode {
+    font-size: larger;
+    border: solid black 2px;
+    border-radius: 5%;
+    padding: 8px 40px;
+    width: 120px;
+}
+
+.eraser {
+    font-size: larger;
+    border: solid black 2px;
+    border-radius: 5%;
+    padding: 8px 40px;
+    width: 120px;
+}
+
+.clear {
+    font-size: larger;
+    border: solid black 2px;
+    border-radius: 5%;
+    padding: 8px 40px;
+    width: 120px;
+}
+
+#grid {
+    display: flex;
+    flex-wrap: wrap;
+    /* align-content: center; */
+    /* align-items: baseline; */
+    /* justify-content: space-between; */
+    background-color: white;
+    box-shadow: 5px 5px 15px -7px #000000;
+    height: 504px;
+    width: 504px;
+}
+
+.gridBox {
+    background-color: white;
+    /* border: dotted white 1px; */
+    flex: 1 1 0px;
+    /* height: 504 / 16; */
+    /* width: 504 / 16; */
+    min-width: 50%;
+    /* max-width: 16.27%; */
+    /* min-height: 16.27%; */
+    /* max-height: 50%; */
+}
+
+.slider {
+    align-self: flex-start;
+}
+
+footer {
+    margin-top: auto;
+}

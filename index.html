@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="js-file.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="rainbow-text">Etch-A-Sketch</h1>
+
+    </header>
+
+    <div class="hero">
+        <div class="controlPanel">
+            <input type='color' class="colorWheel btn">
+            <div class="colorMode btn">Color Mode</div>
+            <div class="rainbowMode btn">Rainbow Mode</div>
+            <div class="eraser btn">Eraser</div>
+            <div class="clear btn">Clear</div>
+            <div class="size btn">
+                <input class='slider' type="range" value="16" min="1" max="100" oninput="this.nextElementSibling.value = this.value + ' x ' + this.value">
+                <output>16 x 16</output>
+            </div>
+        </div>
+        <div id="grid"></div>
+    </div>
+    <footer> Namingishard - BananaBushJones - CodingFunky whatever you call me just don't call me late for lunch!</footer>
+
+</body>
+</html>
